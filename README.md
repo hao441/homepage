@@ -1,6 +1,6 @@
 # Homepage
 
-This is my portfolio homepage.
+This is my portfolio homepage. It was built in react, to run, read the below.
 
 ## Available Scripts
 
