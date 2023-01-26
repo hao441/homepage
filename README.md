@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Homepage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my portfolio homepage. It was built in react, to run, read the below.
 
 ## Available Scripts
 
