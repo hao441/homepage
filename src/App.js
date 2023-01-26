@@ -1,5 +1,4 @@
 import React, {useRef} from 'react';
-import { Navigate, Link } from 'react-router-dom';
 import './App.css';
 
 
@@ -32,9 +31,9 @@ const App = () => {
             <br/>
             <br/>
             <br/>
-            <a target="_blank" href="https://github.com/hao441"><img className='contact-icon' src={github} alt="github-icon"/></a>
-              <a target="_blank" href="mailto: harrisonoates@outlook.com"><img className='contact-icon' src={email} alt="email-icon"/></a>
-              <a target="_blank" href="https://www.linkedin.com/in/harrison-o-476a2216b/"><img className='contact-icon' src={linkedin} alt="linkedin-icon"></img></a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/hao441"><img className='contact-icon' src={github} alt="github-icon"/></a>
+              <a target="_blank" rel="noreferrer" href="mailto: harrisonoates@outlook.com"><img className='contact-icon' src={email} alt="email-icon"/></a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harrison-o-476a2216b/"><img className='contact-icon' src={linkedin} alt="linkedin-icon"></img></a>
           </div>
         </div>
         <div ref={projectsRef} id="projects" className='projects-grid'>
@@ -106,9 +105,9 @@ const App = () => {
               <h2 className='contact-sub-title'>Open to software developer opportunities</h2>
               <p className='contact-paragraph'>Feel free to reach out if you are a recruiter, fellow developer or anyone else.</p>
               <br/>
-              <a target="_blank" href="https://github.com/hao441"><img className='contact-icon' src={github} alt="github-icon"/></a>
-              <a target="_blank" href="mailto: harrisonoates@outlook.com"><img className='contact-icon' src={email} alt="email-icon"/></a>
-              <a target="_blank" href="https://www.linkedin.com/in/harrison-o-476a2216b/"><img className='contact-icon' src={linkedin} alt="linkedin-icon"></img></a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/hao441"><img className='contact-icon' src={github} alt="github-icon"/></a>
+              <a target="_blank" rel="noreferrer" href="mailto: harrisonoates@outlook.com"><img className='contact-icon' src={email} alt="email-icon"/></a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harrison-o-476a2216b/"><img className='contact-icon' src={linkedin} alt="linkedin-icon"></img></a>
               <br/>
               <button className='contact-button' onClick={handleTopClick}>Back to Top</button>
             </div>
