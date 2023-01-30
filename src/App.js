@@ -21,8 +21,8 @@ const App = () => {
 
     return (
       <>
-        <div ref={introductionRef} className='background introduction-grid'>
-          <div className=' introduction '>
+        <div ref={introductionRef} className='introduction-grid'>
+          <div className='introduction'>
             <h1 className='introduction-title '>Harrison</h1>
             <h2 className='introduction-sub-title'>Full Stack Developer</h2>
             <p className='introduction-paragraph'>Welcome, my name is Harrison and I specialise in JS and React. I am looking to deploy web apps on a massive scale.</p>
@@ -105,6 +105,8 @@ const App = () => {
             </div>
             <div className='ender'></div>
           </div>
+              </div>
+          {/* projects end */}
           <div className='contact-grid'>
             <div className='contact'>
               <h1 className='contact-title'>Contact</h1>
@@ -118,7 +120,6 @@ const App = () => {
               <button className='contact-button' onClick={handleTopClick}>Back to Top</button>
             </div>
           </div>
-        </div>
       </>
     );
   }
