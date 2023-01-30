@@ -110,7 +110,7 @@
 }
 
 .paragraph-container {
-  background: linear-gradient(  #2e43ff, #ff6e6e6e);
+  background: linear-gradient(  #4a78ff, #ff000060);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -128,7 +128,7 @@
   padding: 0;
   margin: 0;
   font-size: 20px;  
-  color:#0055ff ;
+  color:#ff000063 ;
 }
 
 .card-paragraph {
@@ -174,8 +174,8 @@
   margin-right: 10px; 
   width: 80px;
   height: 30px;
-  color: #ff00005d; 
-  background-color: rgb(21, 0, 0);
+  color: #ff00005b; 
+  background-color: rgba(30, 0, 0, 0.628);
   font-size: 14px;
   font-weight: 600;
   border-style: none;
