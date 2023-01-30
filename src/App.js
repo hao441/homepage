@@ -52,7 +52,7 @@ const App = () => {
                 <div className='card-technology'>MongoDB</div>
               </div>
               <div className='paragraph-container'>
-              <p className='card-paragraph'>Tripset helps with keeping track and keeping up to date with trip itineraries.</p>
+              <p className='card-paragraph'>Tripset helps with keeping track and keeping up to date with trip itineraries. Once a user signs up, they will be able to create a trip and then itinerary items for that trip.</p>
               <br/>
               <p className='card-paragraph'>On the home screen, the user can access all their trips. Upon clicking on a trip, they will see their itinerary in list format where they can expand an item to see the it in more detail or to edit it.</p>
               <br/>
