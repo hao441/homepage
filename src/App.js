@@ -75,7 +75,7 @@ const App = () => {
               <br/>
               <p className='card-paragraph'>It starts as a grid of 300 cells all with the target colour as their background. Though each cell's background colour is controlled by an 'Individual' object with its own colour chromosome.</p>
               <br/>
-              <p className='card-paragraph'>When Evo begins, Indivduals are ranked based on how close their chromosome colour is to the target colour and the top 10% go through to the next generation, generations continues till all cells are the target colour again.</p>
+              <p className='card-paragraph'>When Evo begins, Individuals are ranked based on how close their chromosome colour is to the target colour then the top ten percent go through to the next generation. Generations continue till all cells are the target colour again.</p>
               <br/>
               </div>
               <button className='projects-button' onClick={() => window.open("https://evo.harrisonoates.io", "_blank")}>Demo</button>
