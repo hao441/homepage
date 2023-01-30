@@ -52,11 +52,11 @@ const App = () => {
                 <div className='card-technology'>MongoDB</div>
               </div>
               <div className='paragraph-container'>
-              <p className='card-paragraph'>Tripset helps with keeping track and keeping up to date with trip itineraries. </p>
+              <p className='card-paragraph'>Tripset helps with keeping track and keeping up to date with trip itineraries.</p>
               <br/>
-              <p className='card-paragraph'>On the homescreen, the user can access all their trips. When they go into one of their trips, they will see their itineary in list format where they can expand each item to see more detail edit it.</p>
+              <p className='card-paragraph'>On the home screen, the user can access all their trips. Upon clicking on a trip, they will see their itinerary in list format where they can expand an item to see the it in more detail or to edit it.</p>
               <br/>
-              <p className='card-paragraph'>The user can switch to map view, where each itinerary item is placed on a map with a line drawn through all items based on their date and time.</p>
+              <p className='card-paragraph'>The user can switch to map view, where each itinerary item is placed on a map with a line drawn through all items based on their dates and times.</p>
               <br/>
               </div>
               <button className='projects-button' onClick={() => window.open("https://tripset.harrisonoates.io", "_blank")}>Demo</button>
@@ -92,9 +92,9 @@ const App = () => {
                 <div className='card-technology'>React-router</div>
               </div>
               <div className='paragraph-container'>
-                <p className='card-paragraph'>Farfriends are a group of chatbots that each represented a different cartoon character; Yoda, Lisa Simpson or Stitch from Lilo and Stitch.</p>
+                <p className='card-paragraph'>Farfriends are a group of chatbots that each represent a different cartoon character; Yoda, Lisa Simpson and Stitch from Lilo and Stitch.</p>
                 <br/>
-                <p className='card-paragraph'>The application works predicting the context of the message then mapping the context to a response which is manipulated by a part-of-speech NLP model to impersonate the given character.</p>
+                <p className='card-paragraph'>The application works by predicting the context of a user's message then mapping the context to a response which is manipulated by a part-of-speech NLP model to impersonate the given character.</p>
                 <br/>
                 <p className='card-paragraph'>If a context cannot be accurately matched, the message will be put through a tensorflow qna model and then a fallback response will be given.</p>
                 <br/>
