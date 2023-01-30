@@ -21,9 +21,9 @@ const App = () => {
 
     return (
       <>
-        <div ref={introductionRef} className='introduction-grid'>
-          <div className='introduction'>
-            <h1 className='introduction-title'>Harrison</h1>
+        <div ref={introductionRef} className='background introduction-grid'>
+          <div className=' introduction '>
+            <h1 className='introduction-title '>Harrison</h1>
             <h2 className='introduction-sub-title'>Full Stack Developer</h2>
             <p className='introduction-paragraph'>Welcome, my name is Harrison and I specialise in JS and React. I am looking to deploy web apps on a massive scale.</p>
             <button className='introduction-button' onClick={handleProjectsClick}>View Projects</button>
@@ -31,15 +31,16 @@ const App = () => {
             <br/>
             <br/>
             <br/>
-            <a target="_blank" rel="noreferrer" href="https://github.com/hao441"><img className='contact-icon' src={github} alt="github-icon"/></a>
+            {/* <a target="_blank" rel="noreferrer" href="https://github.com/hao441"><img className='contact-icon' src={github} alt="github-icon"/></a>
               <a target="_blank" rel="noreferrer" href="mailto: harrisonoates@outlook.com"><img className='contact-icon' src={email} alt="email-icon"/></a>
-              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harrison-o-476a2216b/"><img className='contact-icon' src={linkedin} alt="linkedin-icon"></img></a>
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harrison-o-476a2216b/"><img className='contact-icon' src={linkedin} alt="linkedin-icon"></img></a> */}
           </div>
         </div>
         <div ref={projectsRef} id="projects" className='projects-grid'>
           <div className='projects-header'>
             <h1 className='projects-header-title'>Projects</h1>
-            <p className='projects-header-sub-title'>Choose a project to view</p>
+            <br/>
+            <br/>
           </div>
           <div className='projects'>
             <div className='card'>
@@ -50,14 +51,15 @@ const App = () => {
                 <div className='card-technology'>Express</div>
                 <div className='card-technology'>MongoDB</div>
               </div>
-              <p className='card-paragraph'>A user will start by creating an account on Tripset using their email, first name and home city.</p>
+              <div className='paragraph-container'>
+              <p className='card-paragraph'>Tripset helps with keeping track and keeping up to date with trip itineraries. Once a user signs up, they will be able to create a trip and then itinerary items for that trip. </p>
               <br/>
-              <p className='card-paragraph'>Once signed up the user will be able to create a trip followed by an itinerary for that trip including the date, time and location of each item.</p>
+              <p className='card-paragraph'>On the homescreen, the user can access all their trips. When they go into one of their trips, they will see their itineary in list format where they can expand each item to see more detail edit it.</p>
               <br/>
-              <p className='card-paragraph'>Now when the user goes into the Trip they can view their itinerary items in a list view sorted by time and date or by map view, where Tripset will map the user's itinerary.</p>
+              <p className='card-paragraph'>The user can switch to map view, where each itinerary item is placed on a map with a line drawn through all of them based on their dates and times to show the entire trip.</p>
               <br/>
-              <br/>
-              <button className='projects-button'>Demo</button>
+              </div>
+              <button className='projects-button' onClick={() => window.open("https://tripset.harrisonoates.io", "_blank")}>Demo</button>
               <button className='projects-button' onClick={() => window.open("https://github.com/hao441/Tripset-Web", "_blank")}>Github</button>
               
             </div>
@@ -68,13 +70,15 @@ const App = () => {
                 <div className='card-technology'>React</div>
                 <div className='card-technology'>JS</div>
               </div>
-              <p className='card-paragraph'>Evo partitions a large container into 300 cells each assigned to an 'Individual' object that controls the background colour of the cell.</p>
+              <div className='paragraph-container'>
+              <p className='card-paragraph'>Evo is a genetic algorithm that operates almost as a rubix cube solver.</p>
               <br/>
-              <p className='card-paragraph'>Before the evolution starts the user will choose a colour which will become the colour of the whole box.</p>
+              <p className='card-paragraph'>It starts as a grid of 300 cells all with the target colour as their background. Though each cell's background colour is controlled by an 'Individual' object with its own colour chromosome.</p>
               <br/>
-              <p className='card-paragraph'>The genetic algorithm has a static population of 500 and each Individual has its own 'colour' chromosome. The fitness of the individual is scored by how close that chromosome is to the target colour.</p>
+              <p className='card-paragraph'>When Evo begins, Indivduals are ranked based on how close their chromosome colour is to the target colour and the top 10% go through to the next generation, generations continues till all cells are the target colour again.</p>
               <br/>
-              <button className='projects-button'>Demo</button>
+              </div>
+              <button className='projects-button' onClick={() => window.open("https://evo.harrisonoates.io", "_blank")}>Demo</button>
               <button className='projects-button' onClick={() => window.open("https://github.com/hao441/Evo", "_blank")}>Github</button>
 
               
@@ -87,23 +91,25 @@ const App = () => {
                 <div className='card-technology'>Tensorflow</div>
                 <div className='card-technology'>React-router</div>
               </div>
-              <p className='card-paragraph'>At the start screen the user is prompted to select a cartoon character; Yoda, Lisa Simpson or Stitch from Lilo and Stitch and then click Start.</p>
-              <br/>
-              <p className='card-paragraph'>Now one of the three tensorflow models will load which will train on conversation lines which are mapped to their conversation context.</p>
-              <br/>
-              <p className='card-paragraph'>Now the chat UI will load and the user will be able to talk to their character. Once they ask a question, the model will be queried for the context then formulate a response.</p>
-              <br/>
-              
-              <button className='projects-button'>Demo</button>
+              <div className='paragraph-container'>
+                <p className='card-paragraph'>Farfriends are a group of chatbots that each represented a different cartoon character; Yoda, Lisa Simpson or Stitch from Lilo and Stitch.</p>
+                <br/>
+                <p className='card-paragraph'>The application works predicting the context of the message then mapping the context to a response which is manipulated by a part-of-speech NLP model to impersonate the given character.</p>
+                <br/>
+                <p className='card-paragraph'>If a context cannot be accurately matched, the message will be put through a tensorflow qna model and then a fallback response will be given.</p>
+                <br/>
+              </div>
+              <button className='projects-button' onClick={() => window.open("https://farfriends.harrisonoates.io", "_blank")}>Demo</button>
               <button className='projects-button' onClick={() => window.open("https://github.com/hao441/Farfriends", "_blank")}>Github</button>
               
             </div>
+            <div className='ender'></div>
           </div>
           <div className='contact-grid'>
             <div className='contact'>
               <h1 className='contact-title'>Contact</h1>
               <h2 className='contact-sub-title'>Open to software developer opportunities</h2>
-              <p className='contact-paragraph'>Feel free to reach out if you are a recruiter, fellow developer or anyone else.</p>
+              <p className='contact-paragraph'>Feel free to reach out to me on one of the below links.</p>
               <br/>
               <a target="_blank" rel="noreferrer" href="https://github.com/hao441"><img className='contact-icon' src={github} alt="github-icon"/></a>
               <a target="_blank" rel="noreferrer" href="mailto: harrisonoates@outlook.com"><img className='contact-icon' src={email} alt="email-icon"/></a>
