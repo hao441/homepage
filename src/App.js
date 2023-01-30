@@ -56,7 +56,7 @@ const App = () => {
               <br/>
               <p className='card-paragraph'>On the homescreen, the user can access all their trips. When they go into one of their trips, they will see their itineary in list format where they can expand each item to see more detail edit it.</p>
               <br/>
-              <p className='card-paragraph'>The user can switch to map view, where each itinerary item is placed on a map with a line drawn through all of them based on their dates and times to show the entire trip.</p>
+              <p className='card-paragraph'>The user can switch to map view, where each itinerary item is placed on a map with a line drawn through all items based on their date and time.</p>
               <br/>
               </div>
               <button className='projects-button' onClick={() => window.open("https://tripset.harrisonoates.io", "_blank")}>Demo</button>
