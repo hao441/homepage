@@ -32,10 +32,12 @@
 }
 
 .introduction-sub-title {
-  color: #2500c8;
+  background: linear-gradient(  #7874ff, #0022fffd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 36px;
   font-weight: 500;
-  font-family:
 }
 
 .introduction-paragraph {
@@ -57,8 +59,8 @@
   border-radius: 48px;
 }
 
-.introduction-button:hover {
-  background-color: #032aee;
+.introduction-button:hover {  
+  background-color: #000000;
 }
 
 /* Projects Section */
@@ -120,7 +122,10 @@
 }
 
 .card-title {
-  color: white;
+  background: linear-gradient(  #9b98fc, #1a256dfd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 35px;
   padding: 0;
   margin: 15px;
@@ -216,7 +221,10 @@
 }
 
 .contact-sub-title {
-  color: rgb(0, 67, 200);
+  background: linear-gradient(  #7874ff, #0022fffd);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   font-size: 25px;
   font-weight: 500;
 }
@@ -230,8 +238,32 @@
 }
 
 .contact-icon {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact-git {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact-email {
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.contact-li {
+  width: 80px;
+  height: 80px;
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
@@ -241,7 +273,7 @@
   margin-top: 50px;
   width: 170px;
   height: 40px;
-  background-color: #071C8A;
+  background: linear-gradient(  #0800ff7e, #5d00ff9a);
   color: white;
   font-size: 14px;
   border-style: none;
@@ -249,7 +281,7 @@
 }
 
 .contact-button:hover {
-  background-color: #032aee;
+  background-color: #000728;
 }
 
 @media only screen and (max-width: 1200px) {
