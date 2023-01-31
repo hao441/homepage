@@ -6,6 +6,8 @@ import github from './git-square.png';
 import linkedin from './linkedin-square.png';
 import email from './email-square.png';
 
+import resume from './Harrison Oates - Resume 2023 - Homepage.pdf'
+
 const App = () => {
 
   const projectsRef = useRef(null);
@@ -26,7 +28,9 @@ const App = () => {
             <h1 className='introduction-title '>Harrison</h1>
             <h2 className='introduction-sub-title'>Full Stack Developer</h2>
             <p className='introduction-paragraph'>Welcome, my name is Harrison and I specialise in Javascript and React. I am looking to deploy web apps on a massive scale.</p>
-            <button className='introduction-button' onClick={handleProjectsClick}>View Projects</button>
+            <button className='introduction-projects-button' onClick={handleProjectsClick}>View Projects</button>
+            {/* <br/> */}
+            <button className='introduction-resume-button' onClick={() => window.open(resume, "_blank")}>View Resume</button>
             <br/>
             <br/>
             <br/>
