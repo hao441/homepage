@@ -88,8 +88,8 @@ const App = () => {
               <p className='card-summary'>Cartoon Character Chatbots</p>
               <div className='card-technologies'>
                 <div className='card-technology'>React</div>
+                <div className='card-technology'>Express</div>
                 <div className='card-technology'>Tensorflow</div>
-                <div className='card-technology'>React-router</div>
               </div>
               <div className='paragraph-container'>
                 <p className='card-paragraph'>Farfriends are a group of chatbots that each represent a different cartoon character; Yoda, Lisa Simpson and Stitch from Lilo and Stitch.</p>
