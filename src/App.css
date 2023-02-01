@@ -54,8 +54,8 @@
   height: 40px;
   background: linear-gradient(  #1966ff99, #0045671d);
   border-color: #0095ff;
-  border-style: groove;
-  border-width: 2px;
+  border-style: solid;
+  border-width: 1px;
   color: rgb(254, 254, 255);
   font-size: 14px;
   border-radius: 48px;
@@ -67,9 +67,9 @@
   width: 170px;
   height: 40px;
   background: linear-gradient(  #114dff8f, #00095989);
-  border-color: rgb(82, 131, 255);
-  border-style:groove;
-  border-width: 2px;
+  border-color: rgb(0, 72, 255);
+  border-style:solid;
+  border-width: 1px;
   color: white;
   font-size: 14px;
   border-radius: 48px;
@@ -295,9 +295,9 @@
   width: 170px;
   height: 40px;
   background: linear-gradient(  #1966ff99, #0045671d);
-  border-color: #557ffd51;
-  border-style: groove;
-  border-width: 2px;
+  border-color: #0095ff;
+  border-style: solid;
+  border-width: 1px;
   color: white;
   font-size: 14px;
   border-radius: 48px;
