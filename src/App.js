@@ -6,7 +6,7 @@ import github from './git-square.png';
 import linkedin from './linkedin-square.png';
 import email from './email-square.png';
 
-import resume from './Harrison Oates - Resume 2023 - Homepage.pdf'
+import resume from './Harrison Oates - Resume 2023.pdf'
 
 const App = () => {
 
