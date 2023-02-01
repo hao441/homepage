@@ -52,10 +52,12 @@
   margin-top: 40px;
   width: 170px;
   height: 40px;
-  background: linear-gradient( #1966ffb7, #00456736);
-  color: white;
+  background: linear-gradient(  #1966ff99, #0045671d);
+  border-color: #0095ff;
+  border-style: groove;
+  border-width: 2px;
+  color: rgb(254, 254, 255);
   font-size: 14px;
-  border-style: none;
   border-radius: 48px;
   margin-right: 20px;
 }
@@ -65,18 +67,20 @@
   width: 170px;
   height: 40px;
   background: linear-gradient(  #114dff8f, #00095989);
+  border-color: rgb(82, 131, 255);
+  border-style:groove;
+  border-width: 2px;
   color: white;
   font-size: 14px;
-  border-style: none;
   border-radius: 48px;
 }
 
 .introduction-projects-button:hover{  
-  background: linear-gradient(  #1966ff99, #0045671d);
+  background: linear-gradient(  #1966ff7f, #0045671d);
 }
 
 .introduction-resume-button:hover {
-  background: linear-gradient(  #114dff6e, #00095953);
+  background: linear-gradient(  #114dff7d, #00095953);
 }
 
 /* Projects Section */
@@ -125,23 +129,21 @@
   width: 350px;
   height: 500px;
   border-radius: 15px;
-  background-color:#ffffff0a;
+  background: linear-gradient(  #a5e9ff17, #000026);
   border: #39468f7e;
   border-width: 1px;
   border-radius: 20px;
   border-style: solid;
+  box-shadow: 0px 0px 0.5px 1px #00b3ff;
 }
 
 .paragraph-container {
-  background: linear-gradient(  #0040fffd, #74daff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  opacity: 0.5;
+  color: #7ca3ff;
+  opacity: 0.7;
 }
 
 .card-title {
-  background: linear-gradient(  #77dbff, #1a256dfd);
+  background: linear-gradient(  #a4e7ff, #123089fd);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -154,7 +156,7 @@
   padding: 0;
   margin: 0;
   font-size: 20px;  
-  color:#0077ff ;
+  color:#008cffbd ;
 }
 
 .card-paragraph {
@@ -175,7 +177,7 @@
   width: auto;
   padding: 5px; 
   border-radius: 5px;
-  color: #0a74deb7; 
+  color: #0098fdee; 
   background-color: rgb(15, 0, 54);
   margin-left: 3px;
   margin-right: 3px;
@@ -240,7 +242,7 @@
 }
 
 .contact-sub-title {
-  background: linear-gradient(  #7874ff, #0022fffd);
+  background: linear-gradient(  #74e6ff, #0022fffd);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -292,15 +294,17 @@
   margin-top: 50px;
   width: 170px;
   height: 40px;
-  background: linear-gradient( #1966ffb7, #00456736);
+  background: linear-gradient(  #1966ff99, #0045671d);
+  border-color: #557ffd51;
+  border-style: groove;
+  border-width: 2px;
   color: white;
   font-size: 14px;
-  border-style: none;
   border-radius: 48px;
 }
 
 .contact-button:hover {
-  background: linear-gradient(  #1966ff99, #0045671d);
+  background: linear-gradient(  #1966ff72, #0045671d);
 }
 
 @media only screen and (max-width: 1200px) {
