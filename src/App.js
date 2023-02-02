@@ -27,7 +27,7 @@ const App = () => {
           <div className='introduction'>
             <h1 className='introduction-title '>Harrison</h1>
             <h2 className='introduction-sub-title'>Full Stack Developer</h2>
-            <p className='introduction-paragraph'>Welcome, my name is Harrison and I specialise in Javascript and React. I want to deploy technology that shapes the future.</p>
+            <p className='introduction-paragraph'>Welcome! My name is Harrison, and I specialise in Javascript and React. I want to deploy technology that shapes the future.</p>
             <button className='introduction-projects-button' onClick={handleProjectsClick}>View Projects</button>
             {/* <br/> */}
             <button className='introduction-resume-button' onClick={() => window.open(resume, "_blank")}>View Resume</button>
@@ -56,9 +56,9 @@ const App = () => {
                 <div className='card-technology'>MongoDB</div>
               </div>
               <div className='paragraph-container'>
-              <p className='card-paragraph'>Tripset helps with keeping track and keeping up to date with trip itineraries. Once a user signs up, they will be able to create a trips and itineraries.</p>
+              <p className='card-paragraph'>Tripset helps with keeping track and keeping up to date with trip itineraries. Once a user signs up, they can create a trip and itinerary items for that trip.</p>
               <br/>
-              <p className='card-paragraph'>On the home screen, the user can access all their trips. Upon clicking on a trip, they will see their itinerary in list format where they can expand an item to see the it in more detail or to edit it.</p>
+              <p className='card-paragraph'>On the home screen, the user can access all their trips. Upon clicking on a trip, they will see their itinerary in a list format where they can expand an item to see it in more detail or edit it.</p>
               <br/>
               <p className='card-paragraph'>The user can switch to map view, where each itinerary item is placed on a map with a line drawn through all items based on their dates and times.</p>
               <br/>
@@ -75,11 +75,12 @@ const App = () => {
                 <div className='card-technology'>JS</div>
               </div>
               <div className='paragraph-container'>
-              <p className='card-paragraph'>Evo is a genetic algorithm that operates almost as a rubix cube solver.</p>
+              <p className='card-paragraph'>Evo is a genetic algorithm that operates almost as a Rubik's Cube solver.</p>
               <br/>
-              <p className='card-paragraph'>It starts as a grid of 300 cells all with the target colour as their background. Though each cell's background colour is controlled by an 'Individual' object with its own colour chromosome.</p>
+              <p className='card-paragraph'>
+It starts as a grid of 300 cells with the target colour as their background. However, each cell's background colour is controlled by an 'Individual' object with its colour chromosome.</p>
               <br/>
-              <p className='card-paragraph'>When Evo begins, Individuals are ranked based on how close their chromosome colour is to the target colour then the top ten percent go through to the next generation. Generations continue till all cells are the target colour again.</p>
+              <p className='card-paragraph'>When Evo begins, Individuals are ranked based on how close their chromosome colour is to the target colour then the top ten per cent go through to the next generation. Generations continue till all cells are the target colour again.</p>
               <br/>
               </div>
               <button className='projects-button' onClick={() => window.open("https://evo.harrisonoates.io", "_blank")}>Demo</button>
@@ -96,11 +97,11 @@ const App = () => {
                 <div className='card-technology'>Tensorflow</div>
               </div>
               <div className='paragraph-container'>
-                <p className='card-paragraph'>Farfriends are a group of chatbots that each represent a different cartoon character; Yoda, Lisa Simpson and Stitch from Lilo and Stitch.</p>
+                <p className='card-paragraph'>Farfriends are a group of chatbots representing different cartoon characters; Yoda, Lisa Simpson and Stitch from Lilo and Stitch.</p>
                 <br/>
-                <p className='card-paragraph'>The application works by predicting the context of a user's message then mapping the context to a response which is manipulated by a part-of-speech NLP model to impersonate the given character.</p>
+                <p className='card-paragraph'>The application predicts the context of a user's message and then maps the context to a response that a part-of-speech NLP model manipulates to impersonate the given character.</p>
                 <br/>
-                <p className='card-paragraph'>If a context cannot be accurately matched, the message will be put through a tensorflow qna model and then a fallback response will be given.</p>
+                <p className='card-paragraph'>A TensorFlow QNA model will handle the message and return a response if the message doesn't accurately match a context.</p>
                 <br/>
               </div>
               <button className='projects-button' onClick={() => window.open("https://farfriends.harrisonoates.io", "_blank")}>Demo</button>
