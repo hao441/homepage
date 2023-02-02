@@ -31,8 +31,8 @@
   margin: 0;
 }
 
-.introduction-sub-title {
-  background: linear-gradient(  #74e6ff, #0022fffd);
+.introduction-sub-title { 
+  background: linear-gradient(  #01d0ff, #2b55ff);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -52,12 +52,12 @@
   margin-top: 40px;
   width: 170px;
   height: 40px;
-  background: linear-gradient(  #1966ff99, #0045671d);
-  border-color: #0095ff;
+  background: linear-gradient(  #00f7ffb6, #0045671d);
+  border-color: #00ddff;
   border-style: solid;
   border-width: 1px;
   color: rgb(254, 254, 255);
-  font-size: 14px;
+  font-size: 15px;
   border-radius: 48px;
   margin-right: 20px;
 }
@@ -66,21 +66,21 @@
   margin-top: 20px;
   width: 170px;
   height: 40px;
-  background: linear-gradient(  #114dff8f, #00095989);
-  border-color: rgb(0, 72, 255);
+  background: linear-gradient(  #11d3ffcb, #00095989);
+  border-color: rgb(0, 174, 255);
   border-style:solid;
   border-width: 1px;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   border-radius: 48px;
 }
 
 .introduction-projects-button:hover{  
-  background: linear-gradient(  #1966ff7f, #0045671d);
+  background: linear-gradient(  #00f7ffa7, #0045671d);
 }
 
 .introduction-resume-button:hover {
-  background: linear-gradient(  #114dff7d, #00095953);
+  background: linear-gradient(  #11d3ffa8, #0009596c);
 }
 
 /* Projects Section */
@@ -138,12 +138,12 @@
 }
 
 .paragraph-container {
-  color: #7ca3ff;
+  color: #9fbcff;
   opacity: 0.7;
 }
 
 .card-title {
-  background: linear-gradient(  #a4e7ff, #123089fd);
+  background: linear-gradient(  #00eaff, #0040fffd);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -156,7 +156,7 @@
   padding: 0;
   margin: 0;
   font-size: 20px;  
-  color:#008cffbd ;
+  color:#009deb ;
 }
 
 .card-paragraph {
@@ -178,7 +178,7 @@
   padding: 5px; 
   border-radius: 5px;
   color: #0098fdee; 
-  background-color: rgb(15, 0, 54);
+  background-color: rgb(0, 6, 69);
   margin-left: 3px;
   margin-right: 3px;
   font-size: 13px;
@@ -246,14 +246,14 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 500;
 }
 
 .contact-paragraph {
-  width: 30vw;
+  width: 35vw;
   color: #CACACA;
-  font-size: 16px;
+  font-size: 20px;
   margin: auto;
   word-spacing: 1px;
 }
@@ -294,17 +294,17 @@
   margin-top: 50px;
   width: 170px;
   height: 40px;
-  background: linear-gradient(  #1966ff99, #0045671d);
-  border-color: #0095ff;
-  border-style: solid;
+  background: linear-gradient(  #11d3ffcb, #00095989);
+  border-color: rgb(0, 174, 255);
+  border-style:solid;
   border-width: 1px;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   border-radius: 48px;
 }
 
 .contact-button:hover {
-  background: linear-gradient(  #1966ff72, #0045671d);
+  background: linear-gradient(  #11d3ffa8, #0009596c);
 }
 
 @media only screen and (max-width: 1200px) {
