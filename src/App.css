@@ -33,19 +33,19 @@
 
 .introduction-sub-title { 
   background: linear-gradient(  #01d0ff, #2b55ff);
+  margin-top: 15px;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 500;
 }
 
 .introduction-paragraph {
   width: 375px;
   color: #CACACA;
-  font-size: 17px;
+  font-size: 23px;
   margin: auto;
-  word-spacing: 1px;
 }
 
 .introduction-projects-button {
@@ -308,6 +308,11 @@
 }
 
 @media only screen and (max-width: 1200px) {
+
+  .introduction-paragraph {
+    width: 90vw;
+  }
+
   
   .projects-header-title {
     font-size: 50px;
@@ -339,16 +344,31 @@
 
 @media only screen and (max-width: 500px) {
   .introduction-title {
-    font-size: 50px;
+    font-size: 65px;
   }
   
   .introduction-sub-title {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .introduction-paragraph {
-    max-width: 50vw;
+    width: 80vw;
     word-spacing: 0px;
+  }
+
+  .small-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduction-projects-button {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .introduction-resume-button {
+    margin-top: 30px;
   }
 
   .projects-header-title {
