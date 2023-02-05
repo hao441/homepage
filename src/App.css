@@ -44,7 +44,7 @@
 .introduction-paragraph {
   width: 375px;
   color: #CACACA;
-  font-size: 23px;
+  font-size: 25px;
   margin: auto;
 }
 
@@ -253,7 +253,7 @@
 .contact-paragraph {
   width: 35vw;
   color: #CACACA;
-  font-size: 20px;
+  font-size: 25px;
   margin: auto;
   word-spacing: 1px;
 }
@@ -405,11 +405,16 @@
   }
 
   .contact-sub-title {
-    font-size: 20px;
+    background: linear-gradient(  #0084ff, #0084ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+    font-size: 25px;
   }
 
   .contact-paragraph {
     width: 90vw;
+    font-size: 20px;
   }
 
   .contact-icon {

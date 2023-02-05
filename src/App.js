@@ -27,7 +27,9 @@ const App = () => {
           <div className='introduction'>
             <h1 className='introduction-title '>Harrison</h1>
             <h2 className='introduction-sub-title'>Full Stack Developer</h2>
-            <p className='introduction-paragraph'>Welcome! I specialise in Javascript and React. My goal is to deploy technology that shapes the future.</p>
+            <p className='introduction-paragraph'>Welcome to my profile.</p>
+            <br />
+            <p className='introduction-paragraph'>I specialise in Javascript and React and I want to deploy technology that shapes the future.</p>
             <div className='small-flex'>
               <button className='introduction-projects-button' onClick={handleProjectsClick}>View Projects</button>
               {/* <br/> */}
