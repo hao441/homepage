@@ -12,17 +12,15 @@ import email from './images/email-square.png';
 
 import resume from './assets/Harrison Oates - Resume 2023.pdf'
 
-import { useMediaQuery } from '@material-ui/core';
-
 const App = () => {
 
-  const isMobile = useMediaQuery('(max-width: 999px)');
+  const mql = window.matchMedia('(max-width: 999px)');
 
     return (
       <>
         <div id="introduction" className='introduction-grid'>
           <div className='introduction'>
-            <img className='header-text-image' src={isMobile ? headerTextSmall : headerText} alt={'text'} width={1000} height={179}/>
+            <img className='header-text-image' src={mql.matches ? headerTextSmall : headerText} alt={'text'} width={1000} height={179}/>
             <h2 className='introduction-sub-title'>Full Stack Developer</h2>
             <p className='introduction-paragraph'>A javascript and python developer that wants to deploy technology that will shape the future.</p>
             <div className='small-flex'>
