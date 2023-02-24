@@ -1,39 +1,33 @@
-import React, {useRef} from 'react';
 import './App.css';
 
+import headerTextSmall from './images/headerTextSmall.png';
+import headerText from './images/headerText.png';
+import projectsText from './images/projectsText.png';
+import contactText from './images/contactText.png';
 
-import github from './git-square.png';
-import linkedin from './linkedin-square.png';
-import email from './email-square.png';
 
-import resume from './Harrison Oates - Resume 2023.pdf'
+import github from './images/git-square.png';
+import linkedin from './images/linkedin-square.png';
+import email from './images/email-square.png';
+
+import resume from './assets/Harrison Oates - Resume 2023.pdf'
+
+import { useMediaQuery } from '@material-ui/core';
 
 const App = () => {
 
-  const projectsRef = useRef(null);
-  const introductionRef = useRef(null);
-
-  const handleProjectsClick = () => {
-    projectsRef.current.scrollIntoView({behavior: "smooth"})
-  }
-
-  const handleTopClick = () => {
-    introductionRef.current.scrollIntoView({behavior: "smooth"})
-  }
+  const isMobile = useMediaQuery('(max-width: 999px)');
 
     return (
       <>
-        <div ref={introductionRef} className='introduction-grid'>
+        <div id="introduction" className='introduction-grid'>
           <div className='introduction'>
-            <h1 className='introduction-title '>Harrison</h1>
+            <img className='header-text-image' src={isMobile ? headerTextSmall : headerText} alt={'text'} width={1000} height={179}/>
             <h2 className='introduction-sub-title'>Full Stack Developer</h2>
-            <b><p className='introduction-paragraph'>Welcome to my profile</p></b>
-            <br />
-            <p className='introduction-paragraph'>I specialise in Javascript and React and I want to deploy technology that shapes the future.</p>
+            <p className='introduction-paragraph'>A javascript and python developer that wants to deploy technology that will shape the future.</p>
             <div className='small-flex'>
-              <button className='introduction-projects-button' onClick={handleProjectsClick}>View Projects</button>
-              {/* <br/> */}
-              <button className='introduction-resume-button' onClick={() => window.open(resume, "_blank")}>View Resume</button>
+              <a className='introduction-projects-button' href='#projects'><span className='introduction-projects-button'>View Projects</span></a>
+              <a className='introduction-resume-button' target="_blank" rel="noreferrer" href={resume}>View Resume</a>
             </div>
             <br/>
             <br/>
@@ -44,73 +38,75 @@ const App = () => {
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harrison-o-476a2216b/"><img className='contact-icon' src={linkedin} alt="linkedin-icon"></img></a> */}
           </div>
         </div>
-        <div ref={projectsRef} id="projects" className='projects-grid'>
+        <div id="projects" className='projects-grid'>
           <div className='projects-header'>
-            <h1 className='projects-header-title'>Projects</h1>
+            <center><img className='projects-title-text' src={projectsText} alt={"projects-title-text"} width={365} height={110}/></center>
+            <p className='projects-header-sub-title'>Below are a few of my javascript projects. See more on my <a target="_blank" rel="noreferrer" href="https://github.com/hao441" className='projects-title-github-link'>Github</a>.</p>
             <br/>
             <br/>
           </div>
           <div className='projects'>
             <div className='card'>
-              <h3 className='card-title'>Tripset</h3>
-              <p className='card-summary'>Itinerary Planning Web App </p>
-              <div className='card-technologies'>
-                <div className='card-technology'>React/Redux</div>
-                <div className='card-technology'>Express</div>
-                <div className='card-technology'>MongoDB</div>
+              <div>
+                <h3 className='card-title'>Tripset</h3>
+                <div className='card-technologies'>
+                  <div className='card-technology'>React/Redux</div>
+                  <div className='card-technology'>Express</div>
+                  <div className='card-technology'>MongoDB</div>
+                </div>
               </div>
               <div className='paragraph-container'>
-              <p className='card-paragraph'>Tripset helps with keeping track and keeping up to date with trip itineraries. Once a user signs up, they can create a trip and itinerary items for that trip.</p>
-              <br/>
-              <p className='card-paragraph'>On the home screen, the user can access all their trips. Upon clicking on a trip, they will see their itinerary in a list format where they can expand an item to see it in more detail or edit it.</p>
-              <br/>
-              <p className='card-paragraph'>The user can switch to map view, where each itinerary item is placed on a map with a line drawn through all items based on their dates and times.</p>
-              <br/>
+                <p className='card-paragraph'>Tripset is an itinerary app that will let you create trips, itineraries for those trips and track them through a list view or map view.</p>
+                <br/>
+                <p className='card-paragraph'>The app is built with Redux and Mongodb allowing for seamless authentication and itinerary tracking.</p>
+                <br/>
+                <p className='card-paragraph'>Plan your next trip now.</p>
+                <br/>
               </div>
-              <button className='projects-button' onClick={() => window.open("https://tripset.harrisonoates.io", "_blank")}>Demo</button>
-              <button className='projects-button' onClick={() => window.open("https://github.com/hao441/Tripset-Web", "_blank")}>Github</button>
-              
+              <div>
+                <a className='projects-button' target="_blank" rel="noreferrer" href={"https://tripset.harrisonoates.io"}>Demo</a>
+                <a className='projects-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Tripset-Web"}>Github</a>
+              </div>
             </div>
             <div className='card'>
             <h3 className='card-title'>Evo</h3>
-              <p className='card-summary'>Genetic Algorithm Visualiser</p>
               <div className='card-technologies'>
                 <div className='card-technology'>React</div>
                 <div className='card-technology'>JS</div>
               </div>
               <div className='paragraph-container'>
-              <p className='card-paragraph'>Evo is a genetic algorithm that operates almost as a Rubik's Cube solver.</p>
+              <p className='card-paragraph'>Evo is a genetic algorithm that operates almost as a Rubik's Cube solver. A grid composed of 300 cells are controlled by independent classes.</p>
               <br/>
               <p className='card-paragraph'>
-It starts as a grid of 300 cells with the target colour as their background. However, each cell's background colour is controlled by an 'Individual' object with its colour chromosome.</p>
+              These classes set their cell’s background colour to as close to the target colour as possible without knowing what it is.</p>
               <br/>
-              <p className='card-paragraph'>When Evo begins, Individuals are ranked based on how close their chromosome colour is to the target colour then the top ten per cent go through to the next generation. Generations continue till all cells are the target colour again.</p>
+              <p className='card-paragraph'>Watch evolution happen on your screen.</p>
               <br/>
               </div>
-              <button className='projects-button' onClick={() => window.open("https://evo.harrisonoates.io", "_blank")}>Demo</button>
-              <button className='projects-button' onClick={() => window.open("https://github.com/hao441/Evo", "_blank")}>Github</button>
+              <a className='projects-button' target="_blank" rel="noreferrer" href={"https://evo.harrisonoates.io"}>Demo</a>
+              <a className='projects-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Evo"}>Github</a>
 
               
             </div>
             <div className='card'>
             <h3 className='card-title'>Farfriends</h3>
-              <p className='card-summary'>Cartoon Character Chatbots</p>
               <div className='card-technologies'>
                 <div className='card-technology'>React</div>
                 <div className='card-technology'>Express</div>
                 <div className='card-technology'>Tensorflow</div>
               </div>
               <div className='paragraph-container'>
-                <p className='card-paragraph'>Farfriends are a group of chatbots representing different cartoon characters; Yoda, Lisa Simpson and Stitch from Lilo and Stitch.</p>
+                <p className='card-paragraph'>Farfriends are three chatbots designed to talk and act like Yoda, Lisa Simpson and Stitch.</p>
                 <br/>
-                <p className='card-paragraph'>The application predicts the context of a user's message and then maps the context to a response that a part-of-speech NLP model manipulates to impersonate the given character.</p>
+                <p className='card-paragraph'>The app utilises three ML libraries to perform optimal context matching, fallback generation and response filtering.</p>
                 <br/>
-                <p className='card-paragraph'>A TensorFlow QNA model will handle the message and return a response if the message doesn't accurately match a context.</p>
+                <p className='card-paragraph'>Talk to your childhood friend now.</p>
                 <br/>
               </div>
-              <button className='projects-button' onClick={() => window.open("https://farfriends.harrisonoates.io", "_blank")}>Demo</button>
-              <button className='projects-button' onClick={() => window.open("https://github.com/hao441/Farfriends", "_blank")}>Github</button>
-              
+              <div className='project-button-container'>
+                <a className='projects-button' target="_blank" rel="noreferrer" href={"https://farfriends.harrisonoates.io"}>Demo</a>
+                <a className='projects-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Farfriends"}>Github</a>
+              </div>
             </div>
             <div className='ender'></div>
           </div>
@@ -118,15 +114,16 @@ It starts as a grid of 300 cells with the target colour as their background. How
           {/* projects end */}
           <div className='contact-grid'>
             <div className='contact'>
-              <h1 className='contact-title'>Contact</h1>
-              <h2 className='contact-sub-title'>Open to software developer opportunities</h2>
-              <p className='contact-paragraph'>Feel free to reach out to me on one of the below links.</p>
+              <center><img className='contact-title' src={contactText} alt={'contact-title-text'} width={365} height={100}/></center>
+              <p className='contact-paragraph'>I am currently open to software engineering opportunities so please reach out if you would like to work together.</p>
               <br/>
+            <div className='contact-icons'>
               <a target="_blank" rel="noreferrer" href="https://github.com/hao441"><img className='contact-git' src={github} alt="github-icon"/></a>
               <a target="_blank" rel="noreferrer" href="mailto: harrisonoates@outlook.com"><img className='contact-email' src={email} alt="email-icon"/></a>
               <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/harrison-o-476a2216b/"><img className='contact-li' src={linkedin} alt="linkedin-icon"></img></a>
               <br/>
-              <button className='contact-button' onClick={handleTopClick}>Back to Top</button>
+            </div>
+              <a className='contact-button' href="#introduction"><span className='back-to-top-text'>Back to Top</span></a>
             </div>
           </div>
       </>
