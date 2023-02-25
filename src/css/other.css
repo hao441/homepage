@@ -149,7 +149,7 @@
   
   .card-2 {
     border: 1px solid transparent; /* set a solid border with the same width as the gradient border */
-    border-image: linear-gradient(rgba(255,141,141,1), rgba(167,103,103,.853), rgba(52,52,52,.66)); /* set the border image to a horizontal linear gradient from red to blue */
+    border-image: linear-gradient(rgba(255,141,141,1), rgba(167,103,103,.853), rgba(77, 0, 0, 0.66)); /* set the border image to a horizontal linear gradient from red to blue */
     border-image-slice: 1; /* ensure the entire border is filled with the gradient */
     background-color: rgba(0,0,0,0);
   }
