@@ -1,0 +1,13 @@
+
+@import "custom";
+
+
+$primary-color: #c8ff00;
+
+.black {
+    background-color: $primary-color;
+}
+
+@import "~bootstrap/scss/bootstrap";
+
+

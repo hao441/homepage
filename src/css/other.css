@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue\ Thin.ttf') format('truetype');
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueLight.ttf') format('truetype');
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeue\ Regular.ttf') format('truetype');
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/HelveticaNeueMedium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  /* .background {
+    padding: 1%;
+    background: url(./Vector.jpg) center bottom/cover no-repeat;
+    height: 100vh;
+    position: relative;
+  } */
+  
+  
+  
+  
+  /* Introuction Section */
+  .introduction-grid {
+    background: linear-gradient( #ffffff, #e3e3e3, #aaaaaa); 
+  }
+  
+  
+  /* .introduction-title {
+    font-size: 100px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background-image: linear-gradient(to bottom, #898989, #000000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-stroke: 1.5px transparent;
+    -webkit-text-stroke: 1.5px transparent;
+    text-shadow: 0px 8px 0 rgba(0,0,0,0.2);
+    color: rgba(255,255,255,1);
+  } */
+
+  .introduction-title::after {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
+  .introduction-sub-title {
+    font-size: 60px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+  }
+  
+  .introduction-paragraph {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+    color: #777777;
+  }
+  
+  .introduction-projects-button {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    color: #777777;
+    font-size: 27px;
+    color: #242424;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 30px;
+    /* background-color: rgb(228, 228, 228);
+    padding: 8px; */
+  }
+
+  .introduction-projects-button:hover{  
+    /* box-shadow: 0px 0px 100px rgb(255,255,255, 1);
+    background-color: rgb(209, 209, 209); */
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 1);
+    transition: color 1s;
+  }
+  
+  .introduction-contact-button {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+    color: #b4b4b4;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 50px;
+  }
+  
+  .introduction-contact-button:hover {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    transition: color 1s;
+  
+  }
+  
+  /* Projects Section */
+  .projects-grid {
+    background: linear-gradient( #aaaaaa, #c0c0c0, #e8e8e8);
+  }
+  
+  .projects-header-title {
+    color: white;
+    font-size: 60px;
+  }
+  
+  .projects-header-sub-title {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #919191;
+  }
+  
+  .projects-title-github-link {
+    color: #444444;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .projects-title-github-link:hover {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 1);
+    transition: color 1s;
+  }
+  
+  .card {
+    border: 1px solid transparent; /* set a solid border with the same width as the gradient border */
+    border-image: linear-gradient( rgb(194, 194, 194), rgba(52,52,52, 0.66)); /* set the border image to a horizontal linear gradient from red to blue */
+    border-image-slice: 1; /* ensure the entire border is filled with the gradient */
+  }
+  
+  
+  .card-title {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    color: #333333;
+    font-size: 50px;
+  }
+  
+  .card-summary {
+    font-size: 20px;  
+    color:#009deb ;
+  }
+  
+  .card-paragraph {
+    color: #777777;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  
+  .card-technologies {  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .card-technology {
+    width: auto;
+    padding: 5px; 
+    border-radius: 5px;
+    color: rgba(0,0,0,0.5);
+    background-color: #e8e8e8;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+  }
+  
+  .card-git {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .card-website {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    height: 45px;
+    opacity: 90%; 
+  }
+  
+  .projects-button {
+    color: rgba(0,0,0,0.6); 
+    font-size: 14px;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 50px;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+  
+  .projects-button:hover {
+    box-shadow: 0px 0px 30px rgb(255,255,255, 1);
+    background-color: rgb(235, 235, 235);
+    color: #6e6e6e;
+    transition: box-shadow 1s;
+  }
+  
+  
+  /* Contact Section */
+  .contact-grid {
+    padding: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    max-width: 100vw;
+    height: 100vh;
+    background: linear-gradient( #e8e8e8, #cecece, #999999);
+  }
+  
+  .contact {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+  }
+  
+  .contact-title {
+    margin-bottom: 5vh;
+  }
+  .contact-paragraph {
+    color: #777777;
+    font-size: 25px;
+    margin-bottom: 5vh;
+  }
+  
+  .contact-icons {
+    margin-bottom: 100px;
+  }
+  
+  
+  .contact-git {
+    width: 135px;
+    height: 135px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .contact-git:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
+  .contact-email {
+    width: 115px;
+    height: 115px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .contact-email:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+  
+  .contact-li {
+    width: 130px;
+    height: 130px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .contact-li:hover {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+  }
+  
+  .contact-button {
+    margin-top: 50px;
+    color: #5F5F5F;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .contact-button:hover {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    transition: color 1s;
+  }
+
+
+  .contact-resume-button {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #848484;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .contact-resume-button:hover {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: rgb(203, 203, 203);
+    transition: color 1s;
+  }
+  
+  
+  @media only screen and (max-width: 1150px) and (max-height: 850px) {
+    .header-text-image {
+      width: 80vw;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .header-text-image {
+      width: 90vw;
+      margin-top: -50px;
+    }
+
+
+    .introduction-sub-title{
+      font-size: 42px;
+      width: 95vw;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .introduction-paragraph {
+      font-size: 25px;
+      margin-bottom: -10px;
+    }
+
+    .introduction-projects-button {
+      font-size: 20px;
+      padding: 0;
+    }
+
+    .introduction-contact-button {
+      font-size: 20px;
+    }
+
+   
+  }
+
+  @media only screen and (max-width: 400px) {
+
+    .header-text-image {
+      width: 85vw;
+      height: 30vh;
+      margin-top: -40px;
+    }
+
+    .introduction-sub-title{
+      font-size: 35px;
+      width: 95vw;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .introduction-paragraph {
+      font-size: 25px;
+      margin-bottom: -10px;
+    }
+
+    .introduction-projects-button {
+      font-size: 20px;
+      padding: 0;
+    }
+
+    .introduction-contact-button {
+      font-size: 20px;
+    }
+
+    .projects-title-text {
+      width: 90vw
+    }
+    
+    .contact-title {
+      width: 90vw;
+    }
+
+    .contact-paragraph {
+      font-size: 22px;
+    }
+
+    .contact-git {
+      width: 93px;
+      height: 93px;
+    }
+
+    .contact-email {
+      width: 84px;
+      height: 84px;
+    }
+
+    .contact-li {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+
+    .header-text-image {
+      width: 85vw;
+      height: 30vh;
+      margin-top: -40px;
+    }
+
+    .introduction-sub-title{
+      font-size: 35px;
+      width: 95vw;
+      text-align: center;
+    }
+
+    .introduction-paragraph {
+      font-size: 22px;
+    }
+
+    .introduction-projects-button {
+      font-size: 18px;
+      padding: 0;
+      margin-left: 5px;
+    }
+
+    .introduction-contact-button {
+      font-size: 18px;
+      margin-right: 5px;
+    }
+  }
