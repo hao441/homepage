@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-scroll";
 
-import contactText from './images/contactText2.png';
+import contactText from './images/contactText3.png';
 import github from './images/git-square-black.png';
 import linkedin from './images/linkedin-square.png';
 import email from './images/email-square.png';

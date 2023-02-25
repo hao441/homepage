@@ -1,6 +1,6 @@
 import React from 'react';
 
-import projectsText from './images/projectsText2.png';
+import projectsText from './images/projectsText3.png';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -35,7 +35,7 @@ export default function Projects() {
                         <div className='paragraph-container'>
                             <p className='card-paragraph'>Tripset is an itinerary app that will let you create trips, itineraries for those trips and track them through a list view or map view.</p>
                             <br/>
-                            <p className='card-paragraph'>The app is built with Redux and Mongodb allowing for seamless authentication and itinerary tracking.</p>
+                            <p className='card-paragraph'>The app is built with Redux and Mongodb allowing for truly seamless authentication and itinerary tracking.</p>
                             <br/>
                             <p className='card-paragraph'>Plan your next trip now.</p>
                         </div>
@@ -86,7 +86,7 @@ export default function Projects() {
                         <div className='paragraph-container'>
                             <p className='card-paragraph'>Farfriends is an app where you can chat to three of the most popular cartoon characters as chatbots Yoda, Lisa Simpson and Stitch.</p>
                             <br/>
-                            <p className='card-paragraph'>The app utilises three ML libraries to perform optimal context matching, fallback generation and response filtering.</p>
+                            <p className='card-paragraph'>The app utilises three ML libraries to perform optimal context matching, fallback generation and filtering.</p>
                             <br/>
                             <p className='card-paragraph'>Talk to your childhood friend now.</p>
                             <br/>

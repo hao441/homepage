@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-scroll";
 
-import headerTextSmall from './images/headerTextSmall2.png';
-import headerText from './images/headerText2.png';
+import headerTextSmall from './images/headerTextSmall4.png';
+import headerText from './images/headerText4.png';
 
 export default function Header() {
 
@@ -33,8 +33,9 @@ export default function Header() {
                         <br/>
                         {mql.matches ? 
                             <img className='header-text-image' src={headerTextSmall} alt={'text'} width={"80%"} height={"200"}/> : 
-                            <img className='header-text-image' src={headerText} alt={'text'} width={900} height={150}/>
+                            <img className='header-text-image' src={headerText} alt={'text'} width={900} height={140}/>
                         }
+                        <br/>
                         <br/>
                         <br/>
                         <h1 className='introduction-sub-title'>Full Stack Developer</h1>
