@@ -1,6 +1,6 @@
 import React from 'react';
 
-import projectsText from './images/projectsText.png';
+import projectsText from './images/projectsText2.png';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -23,7 +23,7 @@ export default function Projects() {
             <Row>
                 <Col>
                     <br/>
-                    <div className='card'>
+                    <div className='card-2'>
                     <br/>
                         <h3 className='card-title'>Farfriends</h3>
                         <div className='card-technologies'>
@@ -41,15 +41,15 @@ export default function Projects() {
                         </div>
                         <br/>
                         <div className='project-button-container'>
-                            <a className='projects-button' target="_blank" rel="noreferrer" href={"https://farfriends.harrisonoates.io"}>Demo</a>
-                            <a className='projects-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Farfriends"}>Github</a>
+                            <a className='demo-button' target="_blank" rel="noreferrer" href={"https://farfriends.harrisonoates.io"}>Demo</a>
+                            <a className='git-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Farfriends"}>Github</a>
                         </div>
                         <br/>
                     </div>
                 </Col>
                 <Col>
                     <br/>
-                    <div className='card'>
+                    <div className='card-2'>
                         <br/>
                         <h3 className='card-title'>Farfriends</h3>
                         <div className='card-technologies'>
@@ -67,15 +67,15 @@ export default function Projects() {
                             <br/>
                         </div>
                         <div className='project-button-container'>
-                            <a className='projects-button' target="_blank" rel="noreferrer" href={"https://farfriends.harrisonoates.io"}>Demo</a>
-                            <a className='projects-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Farfriends"}>Github</a>
+                            <a className='demo-button' target="_blank" rel="noreferrer" href={"https://farfriends.harrisonoates.io"}>Demo</a>
+                            <a className='git-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Farfriends"}>Github</a>
                         </div>
                         <br/>
                     </div>
                 </Col>
                 <Col>
                     <br/>
-                    <div className='card'>
+                    <div className='card-2'>
                         <br/>
                         <h3 className='card-title'>Farfriends</h3>
                         <div className='card-technologies'>
@@ -93,8 +93,8 @@ export default function Projects() {
                             <br/>
                         </div>
                         <div className='project-button-container'>
-                            <a className='projects-button' target="_blank" rel="noreferrer" href={"https://farfriends.harrisonoates.io"}>Demo</a>
-                            <a className='projects-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Farfriends"}>Github</a>
+                            <a className='demo-button' target="_blank" rel="noreferrer" href={"https://farfriends.harrisonoates.io"}>Demo</a>
+                            <a className='git-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Farfriends"}>Github</a>
                         </div>
                         <br/>
                     </div>

@@ -51,6 +51,10 @@
     color: rgba(255,255,255,1);
   } */
 
+  body {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(255,0,0,0.07), rgba(0,0,0,0), rgba(255,0,0,0.07));
+  }
+
   .introduction-title::after {
     opacity: 1;
     transition: opacity 0.5s;
@@ -60,6 +64,7 @@
     font-size: 60px;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: 100;
+    color: #9A0000;
   }
   
   .introduction-paragraph {
@@ -80,6 +85,7 @@
     cursor: pointer;
     margin-right: 0px;
     margin-left: 30px;
+    color: #CA0000;
     /* background-color: rgb(228, 228, 228);
     padding: 8px; */
   }
@@ -87,8 +93,8 @@
   .introduction-projects-button:hover{  
     /* box-shadow: 0px 0px 100px rgb(255,255,255, 1);
     background-color: rgb(209, 209, 209); */
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 1px rgb(255, 0, 0);
+    color: rgb(255, 211, 211);
     transition: color 1s;
   }
   
@@ -105,8 +111,8 @@
   }
   
   .introduction-contact-button:hover {
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(92, 0, 0);
+    color: rgb(91, 0, 0);
     transition: color 1s;
   
   }
@@ -132,18 +138,20 @@
     color: #444444;
     cursor: pointer;
     text-decoration: none;
+    color: #D03131;
   }
   
   .projects-title-github-link:hover {
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 1px rgb(255, 137, 137);
+    color: rgba(255, 0, 0, 0.842);
     transition: color 1s;
   }
   
-  .card {
+  .card-2 {
     border: 1px solid transparent; /* set a solid border with the same width as the gradient border */
-    border-image: linear-gradient( rgb(194, 194, 194), rgba(52,52,52, 0.66)); /* set the border image to a horizontal linear gradient from red to blue */
+    border-image: linear-gradient(rgba(255,141,141,1), rgba(167,103,103,.853), rgba(52,52,52,.66)); /* set the border image to a horizontal linear gradient from red to blue */
     border-image-slice: 1; /* ensure the entire border is filled with the gradient */
+    background-color: rgba(0,0,0,0);
   }
   
   
@@ -152,6 +160,8 @@
     font-weight: 100;
     color: #333333;
     font-size: 50px;
+    color: #9A0000;
+    padding: 20px;
   }
   
   .card-summary {
@@ -177,7 +187,9 @@
     padding: 5px; 
     border-radius: 5px;
     color: rgba(0,0,0,0.5);
+    color: #D03131;
     background-color: #e8e8e8;
+    background-color: #FFDEDE;
     margin-left: 3px;
     margin-right: 3px;
     font-family: 'Helvetica Neue', sans-serif;
@@ -197,7 +209,7 @@
     opacity: 90%; 
   }
   
-  .projects-button {
+  .demo-button {
     color: rgba(0,0,0,0.6); 
     font-size: 14px;
     font-weight: 600;
@@ -210,14 +222,37 @@
     padding: 5px;
     text-decoration: none;
     cursor: pointer;
+    color: rgba(202, 0, 0, .6);
   } 
   
-  .projects-button:hover {
-    box-shadow: 0px 0px 30px rgb(255,255,255, 1);
-    background-color: rgb(235, 235, 235);
-    color: #6e6e6e;
-    transition: box-shadow 1s;
+  .demo-button:hover {
+    text-shadow: 1px 1px 1px rgb(255, 137, 137);
+    color: rgba(255, 0, 0, 0.842);
+    transition: color 1s;
   }
+
+  .git-button {
+    color: rgba(0,0,0,0.6); 
+    font-size: 14px;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 50px;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #9C5C5C
+  } 
+  
+  .git-button:hover {
+    text-shadow: 1px 1px 1px rgb(144, 0, 0);
+    color: rgba(255, 0, 0, 0.842);
+    transition: color 1s;
+  }
+  
   
   
   /* Contact Section */
@@ -261,7 +296,7 @@
   }
   
   .contact-git:hover {
-    opacity: 1;
+    opacity: 0.3;
     transition: opacity 0.5s;
   }
   
@@ -274,7 +309,7 @@
   }
   
   .contact-email:hover {
-    opacity: 0.8;
+    opacity: 0.5;
     transition: opacity 0.5s;
   }
   
@@ -287,7 +322,7 @@
   }
   
   .contact-li:hover {
-    opacity: 0.8;
+    opacity: 0.5;
     transition: opacity 0.5s;
   }
   
@@ -299,11 +334,12 @@
     font-size: 30px;
     cursor: pointer;
     text-decoration: none;
+    color: #941B1B;
   }
   
   .contact-button:hover {
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(255, 137, 137);
+    color: rgba(127, 0, 0, 0.842);
     transition: color 1s;
   }
 
@@ -316,11 +352,12 @@
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    color: rgba(171, 65, 65, .6);
   }
 
   .contact-resume-button:hover {
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    color: rgb(203, 203, 203);
+    text-shadow: 1px 1px 1px rgb(255, 137, 137);
+    color: rgba(255, 0, 0, 0.842);
     transition: color 1s;
   }
   
@@ -385,10 +422,14 @@
     .introduction-projects-button {
       font-size: 20px;
       padding: 0;
+      margin-left: 20px;
+
     }
 
     .introduction-contact-button {
       font-size: 20px;
+      margin-left: 10px;
+
     }
 
     .projects-title-text {
@@ -446,5 +487,14 @@
     .introduction-contact-button {
       font-size: 18px;
       margin-right: 5px;
+    }
+
+    .demo-button {
+      margin-right: 20px;
+    }
+
+    .git-button {
+      margin-left: 20px;
+      padding: 0;
     }
   }
