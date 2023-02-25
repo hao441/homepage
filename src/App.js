@@ -1,6 +1,5 @@
 import './css/App.css';
 import './css/App.scss';
-import NavBar from './Navbar';
 import Projects from './Projects';
 import Header from './Header';
 import Contact from './Contact';
