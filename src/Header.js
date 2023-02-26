@@ -33,7 +33,7 @@ export default function Header() {
                         <br/>
                         {mql.matches ? 
                             <img className='header-text-image' src={headerTextSmall} alt={'text'} width={"80%"} height={"200"}/> : 
-                            <img className='header-text-image' src={headerText} alt={'text'} width={900} height={140}/>
+                            <img className='header-text-image' src={headerText} alt={'text'} width={910} height={120}/>
                         }
                         <br/>
                         <br/>
