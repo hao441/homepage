@@ -16,7 +16,7 @@ export default function Projects() {
     <>
         <Container id="projects" className='text-center'>
             <div className='projects-header'>
-                <center><img className='projects-title-text' src={projectsText} alt={"projects-title-text"} width={365} height={110}/></center>
+                <center><img className='projects-title-text' src={projectsText} alt={"projects-title-text"} width={365} height={105}/></center>
                 <br/>
                 <p className='projects-header-sub-title'>Below are a few of my javascript projects. See more on my <a target="_blank" rel="noreferrer" href="https://github.com/hao441" className='projects-title-github-link'>Github</a>.</p>
             </div>
@@ -58,11 +58,11 @@ export default function Projects() {
                         </div>
                         <br/>
                         <div className='paragraph-container'>
-                            <p className='card-paragraph'>Evo is a genetic algorithm that operates almost as a Rubik's Cube solver. A grid composed of 300 cells are controlled by independent classes.</p>
+                            <p className='card-paragraph'>Evo is a genetic algorithm that is composed of a grid of 300 cells each with independent classes controlling their background colour.</p>
                             <br/>
-                            <p className='card-paragraph'>These classes set their cell’s background colour to as close to the target colour as possible without knowing what it is.</p>
+                            <p className='card-paragraph'>A target colour is chosen then the evolution starts, all cells cycle through hexcode combinations until they find it.</p>
                             <br/>
-                            <p className='card-paragraph'>Watch evolution happen on your screen.</p>
+                            <p className='card-paragraph'>Watch evolution happen.</p>
                             <br/>
                         </div>
                         <div className='project-button-container'>

@@ -19,7 +19,7 @@ export default function Contact() {
                         <br/>
                         <br/>
                         <br/>
-                        <center><img className='contact-title' src={contactText} alt={'contact-title-text'} width={365} height={100}/></center>
+                        <center><img className='contact-title' src={contactText} alt={'contact-title-text'} width={365} height={95}/></center>
                         <p className='contact-paragraph'>I am currently open to software engineering opportunities so please feel free to reach out through one of the below links.</p>
                         <br/>
                         <div className='contact-icons'>
