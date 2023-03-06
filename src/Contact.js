@@ -32,7 +32,7 @@ export default function Contact() {
 
                         </div>
                         
-                        <Link className='contact-button back-to-top-text'  activeClass="active" to="header" spy={true} smooth={true} offset={0} duration={2000}>
+                        <Link className='contact-button back-to-top-text'  activeClass="active" to="header" spy={true} smooth={true} offset={0} duration={100}>
                             Back to Top
                         </Link>
                         <br/>
