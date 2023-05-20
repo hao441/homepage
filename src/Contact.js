@@ -7,7 +7,7 @@ import github from './images/git-square-black.png';
 import linkedin from './images/linkedin-square.png';
 import email from './images/email-square.png';
 
-import resume from './assets/Harrison Oates - Resume 2023.pdf'
+import resume from './assets/Harrison Oates - Software Resume 2023 - Current.pdf'
 
 
 export default function Contact() {
