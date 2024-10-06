@@ -41,7 +41,7 @@ export default function Projects() {
                         </div>
                         <br/>
                         <div className='project-button-container'>
-                            <a className='demo-button' target="_blank" rel="noreferrer" href={"https://tripset.harrisonoates.io"}>Demo</a>
+                            <a className='demo-button' target="_blank" rel="noreferrer" href={"https://tripsetproject.netlify.app"}>Demo</a>
                             <a className='git-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Tripset-Web"}>Github</a>
                         </div>
                         <br/>
@@ -66,7 +66,7 @@ export default function Projects() {
                             <br/>
                         </div>
                         <div className='project-button-container'>
-                            <a className='demo-button' target="_blank" rel="noreferrer" href={"https://evo.harrisonoates.io"}>Demo</a>
+                            <a className='demo-button' target="_blank" rel="noreferrer" href={"https://evoproject.netlify.app"}>Demo</a>
                             <a className='git-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Evo"}>Github</a>
                         </div>
                         <br/>
@@ -92,7 +92,7 @@ export default function Projects() {
                             <br/>
                         </div>
                         <div className='project-button-container'>
-                            <a className='demo-button' target="_blank" rel="noreferrer" href={"https://farfriends.harrisonoates.io"}>Demo</a>
+                            <a className='demo-button' target="_blank" rel="noreferrer" href={"https://farfriends.netlify.app"}>Demo</a>
                             <a className='git-button' target="_blank" rel="noreferrer" href={"https://github.com/hao441/Farfriends"}>Github</a>
                         </div>
                         <br/>
